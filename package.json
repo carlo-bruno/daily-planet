@@ -1,0 +1,25 @@
+{
+  "name": "daily-planet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlo-bruno/daily-planet.git"
+  },
+  "author": "Carlo Bruno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlo-bruno/daily-planet/issues"
+  },
+  "homepage": "https://github.com/carlo-bruno/daily-planet#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0"
+  }
+}

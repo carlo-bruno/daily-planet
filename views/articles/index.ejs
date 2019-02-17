@@ -1,0 +1,18 @@
+<% include ../partials/header.ejs %>
+
+<% articles.forEach( (article, id) => { %>
+<div class="article-box">
+  <h3><%= article.title %></h3>
+  <p><%= article.body %></p>
+  <a href="/articles/<%=id%>">Read more...</a>
+  <a href="/articles/<%=id%>/edit">Edit Article</a>
+  <form
+  method="POST"
+  action="/articles/<%= id %>/?_method=DELETE"
+  >
+    <input type="submit" value="Delete Article" />
+  </form>
+</div>
+<% }); %>
+
+<% include ../partials/footer.ejs %>

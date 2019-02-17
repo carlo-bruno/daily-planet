@@ -1,3 +1,7 @@
+.prettierignore
+
+
+
 # Logs
 logs
 *.log
