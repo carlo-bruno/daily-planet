@@ -1,17 +1,140 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  /* background-color: gray; */
+  background-color: #bab9b9;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
+main {
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/* Header ----------------------------------------- */
+
+header {
+  width: 100%;
+  max-width: 1140px;
+  margin: 10px auto;
+  text-align: center;
+}
+header img {
+  width: 80%;
+  margin: 10px 0;
+}
+
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  /* width: 180px; */
+  border-bottom: 3px solid transparent;
+  margin: 0 20px;
+  letter-spacing: 0.7px;
+}
+
+nav a:hover {
+  color: #2865a2;
+  border-bottom: 3px solid #2865a2;
+}
+
+header:after {
+  content: "";
+  display: block;
+  width: 85%;
+  max-width: 1140px;
+  margin: 10px auto 0;
+  height: 3px;
+  background-color: #000;
+  /* border-radius: 5px; */
+}
+
+/* Forms ------------------------------------------ */
+form input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* Buttons ---------------------------------------- */
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons a,
+.buttons input,
+.button {
+  width: 150px;
+  height: 32px;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 1px #333;
+  padding: 5px 15px;
+  margin-right: 10px;
+
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+
+  cursor: pointer;
+}
+
+.buttons a:hover,
+.buttons input:hover,
+.button:hover {
+  background-color: #4776a5;
+  color: white;
+}
+
+/* Index page ------------------------------------- */
 .article-box {
-  background-color: #7b93ab;
-  border: 0.25em solid #000000;
+  background-color: #9bbfe3;
+  border: 0.25rem solid #000000;
   border-radius: 5px;
-  margin: 10px;
-  padding: 5px 20px;
+  margin: 10px 0 15px;
+  padding: 10px 20px;
+}
+
+.article-box h3 {
+  font-size: 1.6rem;
+  padding: 5px 0 10px;
+}
+
+/* Show Article ----------------------------------- */
+.show h2 {
+  margin: 10px 0 15px;
+}
+
+.show p {
+  padding-bottom: 10px;
+}
+
+/* Edit Article ----------------------------------- */
+.edit h2 {
+  margin: 10px 0 15px;
+}
+
+/* Edit Article ----------------------------------- */
+.new h2 {
+  margin: 10px 0 15px;
 }
